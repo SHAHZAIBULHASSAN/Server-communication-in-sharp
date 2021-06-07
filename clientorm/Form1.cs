@@ -35,7 +35,7 @@ namespace clientorm
         private void Form1_Load_1(object sender, EventArgs e)
         {
             msg("Client Started");
-            clientSocket.Connect("127.0.0.1", 8888);
+            clientSocket.Connect("127.0.0.1", 9050);
             label1.Text = "Client Socket Program - Server Connected ...";
 
         }

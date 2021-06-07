@@ -16,14 +16,14 @@ namespace client
 
 
             #region comment
-            // Socket client;
-            // client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            // IPEndPoint a = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1233);
-            // client.Connect(a);
-            // Console.WriteLine("enter message:");
-            // string stre = Console.ReadLine();
+            Socket client;
+            client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            IPEndPoint a = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 1233);
+            client.Connect(a);
+            Console.WriteLine("enter message:");
+            string stre = Console.ReadLine();
 
-            ////  
+            //  
             // byte[] Buffer = Encoding.Default.GetBytes(stre);
             // client.Send(Buffer, 0, Buffer.Length, 0);
 
